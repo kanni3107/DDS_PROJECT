@@ -2,7 +2,7 @@
 # C++ Mini-Projects Collection
 This repository contains a collection of three separate C++ command-line projects, each designed to demonstrate fundamental programming concepts and data structures.
 
-1. Personal Finance Tracker
+## 1. Personal Finance Tracker
 Project Overview
 This is a simple yet effective command-line Personal Finance Tracker written in C++. It allows users to manage their income and expenses, providing features to add, view, sort, filter, and search transactions. The application persists data by saving to and loading from a local text file. A key feature is the ASCII bar chart for visualizing monthly spending.
 
@@ -42,7 +42,7 @@ Monthly Spending Report (ASCII Chart)
 2023-10    | ######################################## 1335.50
 2023-11    | ###################################### 1200.00
 
-2. Smart Parking Lot Management
+## 2. Smart Parking Lot Management
 Project Overview
 This C++ application simulates a smart parking lot management system. It uses a linked list to dynamically manage parking slots, allowing cars to be parked and removed. The system keeps track of the total capacity, allocates the first available slot to a new car, and handles overflow scenarios when the lot is full. It also calculates a simple parking fee upon a car's exit based on the duration of its stay.
 
@@ -84,7 +84,7 @@ Slot 2: EMPTY
 ...
 Slot 10: EMPTY
 
-3. Expression Calculator
+## 3. Expression Calculator
 Project Overview
 This C++ program is a command-line expression calculator that can evaluate standard mathematical infix expressions. It first converts the user-provided infix expression (e.g., 5 + (10 * 2)) into a postfix expression (e.g., 5 10 2 * +), also known as Reverse Polish Notation (RPN). It then evaluates the postfix expression to compute the final result. The program correctly handles operator precedence and parentheses.
 
