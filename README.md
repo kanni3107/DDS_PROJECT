@@ -18,14 +18,14 @@ This repository contains a collection of three separate C++ command-line project
 
 📈 Monthly Report: Generates an ASCII bar chart to visualize monthly expenses.
 
-Data Structures Used
+#### Data Structures Used
 struct Transaction: A custom structure to hold the details of each financial entry.
 
 std::vector<Transaction>: A dynamic array to store the collection of all transactions.
 
 std::map<std::string, double>: Used to map each month to its total expense for the report.
 
-How to Run
+#### How to Run
 Navigate to the PersonalFinanceTracker/src directory.
 
 Compile the main.cpp file: g++ main.cpp -o finance_tracker
@@ -59,7 +59,7 @@ struct ParkingSlot: Represents a node in the linked list.
 
 Singly Linked List: The entire parking lot is represented as a singly linked list of ParkingSlot nodes.
 
-** How to Run **
+#### How to Run 
 Navigate to the SmartParkingLot/src directory.
 
 Compile the source code: g++ main.cpp -o parking_lot
@@ -69,11 +69,12 @@ Run the program: ./parking_lot
 Sample Output
 Viewing Lot Status
 
---- Parking Lot Status ---
+ Parking Lot Status 
 Total Slots: 10
 Occupied Slots: 1
 Available Slots: 9
---------------------------
+
+
 Slot 1: OCCUPIED - Plate: ABC-123 (Entry: 2023-10-27 14:30:15)
 Slot 2: EMPTY
 ...
@@ -96,10 +97,10 @@ A command-line calculator that evaluates standard mathematical infix expressions
 
 🔢 Supports Floating-Point Numbers.
 
-Data Structures Used
+#### Data Structures Used
 std::stack: The core data structure for both the infix-to-postfix conversion and the final postfix evaluation.
 
-** How to Run **
+#### How to Run 
 Navigate to the ExpressionCalculator/src directory.
 
 Compile the main.cpp file: g++ main.cpp -o calculator
