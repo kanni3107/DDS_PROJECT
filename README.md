@@ -1,5 +1,5 @@
 # DDS_PROJECT
-C++ Mini-Projects Collection
+# C++ Mini-Projects Collection
 This repository contains a collection of three separate C++ command-line projects, each designed to demonstrate fundamental programming concepts and data structures.
 
 1. Personal Finance Tracker
