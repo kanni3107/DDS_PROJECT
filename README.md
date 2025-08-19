@@ -1,32 +1,29 @@
-# DDS_PROJECT
-# C++ Mini-Projects Collection
+# C++ Mini-Projects Collection 👋
 This repository contains a collection of three separate C++ command-line projects, each designed to demonstrate fundamental programming concepts and data structures.
 
-## 1. Personal Finance Tracker
-Project Overview
-This is a simple yet effective command-line Personal Finance Tracker written in C++. It allows users to manage their income and expenses, providing features to add, view, sort, filter, and search transactions. The application persists data by saving to and loading from a local text file. A key feature is the ASCII bar chart for visualizing monthly spending.
+## 💰 1. Personal Finance Tracker
+### Project Overview
+ A simple yet effective command-line tool to manage your income and expenses. It persists data locally and can generate a simple ASCII bar chart to visualize your monthly spending habits.
 
-Features
-Add Transactions: Record income or expenses with date, description, and amount.
+### Features
+📝 Add Transactions: Record income or expenses with date, description, and amount.
 
-View Transactions: Display a formatted list of all transactions along with a summary of total income, expenses, and net balance.
+📊 View Transactions: Display a formatted list of all transactions and a net balance summary.
 
-Data Persistence: Automatically saves transactions to transactions.txt and loads them on startup.
+💾 Data Persistence: Automatically saves transactions to transactions.txt and loads them on startup.
 
-Sort: Sort transactions by amount in ascending order.
+↕️ Sort: Sort transactions by amount in ascending order.
 
-Filter: View transactions of a specific type (e.g., only 'income' or 'expense').
+🔍 Filter & Search: View transactions of a specific type or find them by keywords.
 
-Search: Find specific transactions by searching for keywords in their descriptions.
-
-Monthly Report: Generates a simple ASCII bar chart to visualize total expenses for each month.
+📈 Monthly Report: Generates an ASCII bar chart to visualize monthly expenses.
 
 Data Structures Used
-struct Transaction: A custom data structure to hold the details of each financial entry (date, description, amount, type).
+struct Transaction: A custom structure to hold the details of each financial entry.
 
-std::vector<Transaction>: A dynamic array is used to store the collection of all transactions.
+std::vector<Transaction>: A dynamic array to store the collection of all transactions.
 
-std::map<std::string, double>: Used to map each month to the total expense amount for that month in the report.
+std::map<std::string, double>: Used to map each month to its total expense for the report.
 
 How to Run
 Navigate to the PersonalFinanceTracker/src directory.
@@ -42,29 +39,27 @@ Monthly Spending Report (ASCII Chart)
 2023-10    | ######################################## 1335.50
 2023-11    | ###################################### 1200.00
 
-## 2. Smart Parking Lot Management
+## 🅿️ 2. Smart Parking Lot Management
 Project Overview
-This C++ application simulates a smart parking lot management system. It uses a linked list to dynamically manage parking slots, allowing cars to be parked and removed. The system keeps track of the total capacity, allocates the first available slot to a new car, and handles overflow scenarios when the lot is full. It also calculates a simple parking fee upon a car's exit based on the duration of its stay.
+This application simulates a smart parking lot management system using a linked list. It handles parking, removal, and status tracking for a fixed number of slots, and even calculates a parking fee based on the duration of the stay.
 
-Features
-Dynamic Slot Management: Park cars in the first available slot.
+### Features
+🚗 Dynamic Slot Management: Park cars in the first available slot.
 
-Car Removal: Remove cars by their license plate and calculate the parking fee.
+💳 Car Removal & Fee Calculation: Remove cars by license plate and calculate the parking fee.
 
-Real-time Status: View the current status of all parking slots.
+🚦 Real-time Status: View the current status of all parking slots (occupied or empty).
 
-Capacity Handling: Manages a fixed number of parking slots.
+🈵 Capacity Handling: Manages a fixed number of parking slots and notifies when full.
 
-Overflow Notification: Informs the user when the parking lot is full.
+⏱️ Time Tracking: Records the entry time for each car.
 
-Time Tracking: Records the entry time for each car to calculate parking duration.
-
-Data Structures Used
-struct ParkingSlot: Represents a node in the linked list, containing car details and a pointer to the next slot.
+#### Data Structures Used
+struct ParkingSlot: Represents a node in the linked list.
 
 Singly Linked List: The entire parking lot is represented as a singly linked list of ParkingSlot nodes.
 
-How to Run
+** How to Run **
 Navigate to the SmartParkingLot/src directory.
 
 Compile the source code: g++ main.cpp -o parking_lot
@@ -84,27 +79,27 @@ Slot 2: EMPTY
 ...
 Slot 10: EMPTY
 
-## 3. Expression Calculator
+## 🧮 3. Expression Calculator
 Project Overview
-This C++ program is a command-line expression calculator that can evaluate standard mathematical infix expressions. It first converts the user-provided infix expression (e.g., 5 + (10 * 2)) into a postfix expression (e.g., 5 10 2 * +), also known as Reverse Polish Notation (RPN). It then evaluates the postfix expression to compute the final result. The program correctly handles operator precedence and parentheses.
+A command-line calculator that evaluates standard mathematical infix expressions. It uses the Shunting-yard algorithm to convert the expression to postfix (RPN) and then calculates the result, correctly handling operator precedence and parentheses.
 
-Features
-Infix to Postfix Conversion: Implements the Shunting-yard algorithm.
+### Features
+🔄 Infix to Postfix Conversion: Implements the Shunting-yard algorithm.
 
-Postfix Evaluation: Evaluates the generated postfix expression.
+🧮 Postfix Evaluation: Evaluates the generated postfix expression to get the final result.
 
-Operator Precedence: Correctly handles the order of operations.
+🥇 Operator Precedence: Correctly handles the order of operations (*, / before +, -).
 
-Parentheses Handling: Properly evaluates expressions within parentheses first.
+🧠 Parentheses Handling: Properly evaluates expressions within parentheses first.
 
-Error Handling: Catches errors like mismatched parentheses or division by zero.
+⚠️ Error Handling: Catches errors like mismatched parentheses or division by zero.
 
-Supports Floating-Point Numbers.
+🔢 Supports Floating-Point Numbers.
 
 Data Structures Used
-std::stack: The stack is the core data structure used for both the infix-to-postfix conversion (to store operators) and the postfix evaluation (to store operands).
+std::stack: The core data structure for both the infix-to-postfix conversion and the final postfix evaluation.
 
-How to Run
+** How to Run **
 Navigate to the ExpressionCalculator/src directory.
 
 Compile the main.cpp file: g++ main.cpp -o calculator
